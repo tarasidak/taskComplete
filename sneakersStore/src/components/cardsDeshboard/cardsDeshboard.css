@@ -1,0 +1,77 @@
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(120,120,120);
+}
+
+.mySneak{
+    width: 30%;
+    border: 1px solid orange;
+    margin: 10px;
+    position: relative;
+}
+
+.mySneak .price{
+    color: orange;
+    font-weight: bold;
+}
+
+.mySneak img{
+    max-width: 50%;
+}
+
+.mySneak .description{
+    width: 100%;
+    font-weight: bold;
+    margin-top: 40px;
+    font-size:16px;
+    height: 60px;
+    overflow:hidden;
+    outline: none;
+    cursor:pointer;
+}
+
+.mySneak .description:hover{
+    height: auto;
+    cursor: pointer;
+}
+
+.deleteButton {
+    position: absolute;
+    border-left:1px solid orange;
+    border-bottom:1px solid orange;
+    border-top:none;
+    border-right: none;
+    color: orange;
+    font-size: 12px;
+    padding: 5px 10px;
+    background: rgb(120,120,120);
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.deleteButton:before{
+    position: absolute;
+    content: '';
+    width:100%;
+    height: 100%;
+    background: tomato;
+    top:0;
+    left:-100%;
+    opacity: .3;
+    transition: .5s;
+    border: none;
+    z-index: -1;
+}
+
+.deleteButton:hover{
+    color: red;
+}
+
+.deleteButton:hover::before{
+    left:0;
+    z-index: 1;
+}

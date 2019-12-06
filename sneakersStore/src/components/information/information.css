@@ -1,0 +1,21 @@
+.information{
+    background: rgb(120, 120, 120);
+    border: 1px solid orange;
+    width: 50%;
+    text-align: left;
+}
+
+.information .clear{
+    background: orange;
+    color: tomato;
+    padding: 10px;
+    font-size: 16px;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.information .clear:focus{
+    color: red;
+    opacity: 0.7;
+}
